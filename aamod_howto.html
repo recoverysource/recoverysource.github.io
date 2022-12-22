@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AA(mod) Website &mdash; Recovery Source 0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Update Website" href="update_site.html" />
+    <link rel="prev" title="About AA Mod" href="about_aamod.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Recovery Source
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about_aamod.html">About AA Mod</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">AA(mod) Website</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#new-website">New Website</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#interactive-maps">Interactive Maps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#meeting-guide-app">Meeting Guide App</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#security-updates">Security Updates</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="update_site.html">Update Website</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mirrors.html">Courtesy Mirrors</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Recovery Source</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>AA(mod) Website</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/aamod_howto.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="aa-mod-website">
+<span id="aamod"></span><h1>AA(mod) Website<a class="headerlink" href="#aa-mod-website" title="Permalink to this headline"></a></h1>
+<p>This page covers everything needed in order to deploy and maintain an AA-focused
+website using <code class="docutils literal notranslate"><span class="pre">aamod</span></code> and Github Pages.</p>
+<section id="new-website">
+<span id="aamod-newsite"></span><h2>New Website<a class="headerlink" href="#new-website" title="Permalink to this headline"></a></h2>
+<p>Note: Documentation explaining how to <a class="reference internal" href="update_site.html#aamod-update"><span class="std std-ref">Update a Website</span></a>
+includes many images and is provided in a separate document.</p>
+<p>Follow these steps to deploy a brand new regional AA website:</p>
+<ol class="arabic simple" start="0">
+<li><p>Register a domain with one of the <a class="reference external" href="https://domains.google/">common registrars</a></p>
+<ul class="simple">
+<li><p>A good rule of thumb is to avoid any service that offers to build your website (i.e. BlueHost)</p></li>
+</ul>
+</li>
+<li><p>Create an account and log in to Github</p></li>
+<li><p>Create a new free organization</p>
+<ul class="simple">
+<li><p>GH Pages is restricted to one site per user/org)</p></li>
+<li><p>You can alternatively register with a shared account (i.e. areaXweb) and skip this step</p></li>
+</ul>
+</li>
+</ol>
+<p>3. Set up DNS:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span>     <span class="o">@</span>     <span class="mf">185.199.108.153</span>
+            <span class="mf">185.199.109.153</span>
+            <span class="mf">185.199.110.153</span>
+            <span class="mf">185.199.111.153</span>
+<span class="n">AAAA</span>  <span class="o">@</span>     <span class="mi">2606</span><span class="p">:</span><span class="mi">50</span><span class="n">c0</span><span class="p">:</span><span class="mi">8000</span><span class="p">::</span><span class="mi">153</span>
+            <span class="mi">2606</span><span class="p">:</span><span class="mi">50</span><span class="n">c0</span><span class="p">:</span><span class="mi">8001</span><span class="p">::</span><span class="mi">153</span>
+            <span class="mi">2606</span><span class="p">:</span><span class="mi">50</span><span class="n">c0</span><span class="p">:</span><span class="mi">8002</span><span class="p">::</span><span class="mi">153</span>
+            <span class="mi">2606</span><span class="p">:</span><span class="mi">50</span><span class="n">c0</span><span class="p">:</span><span class="mi">8003</span><span class="p">::</span><span class="mi">153</span>
+<span class="n">CNAME</span> <span class="n">www</span>   <span class="o">&lt;</span><span class="n">username</span><span class="o">|</span><span class="n">project</span><span class="o">&gt;.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">.</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Make a copy of <a class="reference external" href="https://github.com/recoverysource/hugo-website">hugo-website</a>, giving it a meaningful name and description</p>
+<ul class="simple">
+<li><p>Choose <code class="docutils literal notranslate"><span class="pre">Fork</span></code> if you would like us to watch <code class="docutils literal notranslate"><span class="pre">aamod</span></code> for you (easier).</p></li>
+<li><p>Choose <code class="docutils literal notranslate"><span class="pre">Use</span> <span class="pre">this</span> <span class="pre">template</span></code> to create a copy without the link (safer).</p></li>
+</ul>
+</li>
+<li><p>Go to the “Actions” tab in your new repository and enable workflows</p></li>
+<li><p>Copy any example content (without <code class="docutils literal notranslate"><span class="pre">example-</span></code>) and update as appropriate:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">example-config.yaml</span></code> (live <a class="reference external" href="https://github.com/area63aa/area63aa.org/blob/master/config.yaml">sample config</a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">content/example-contact.md</span></code></p></li>
+</ul>
+</li>
+<li><p>Update <code class="docutils literal notranslate"><span class="pre">static/CNAME</span></code> with the domain you registered (step 0)</p></li>
+<li><p>Update local meeting information in <code class="docutils literal notranslate"><span class="pre">data/meetings.yaml</span></code></p>
+<ul class="simple">
+<li><p>This can optionally be broken into one meeting per file (see <a class="reference external" href="https://github.com/area63aa/area63aa.org/tree/master/data/meetings">Area 63 Meetings</a>)</p></li>
+</ul>
+</li>
+<li><p>Wait for a successful build and deploy of your website</p></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">Settings</span></code> page of your repository then go to <code class="docutils literal notranslate"><span class="pre">Pages</span></code> and set <code class="docutils literal notranslate"><span class="pre">Source</span></code> to <code class="docutils literal notranslate"><span class="pre">Branch[gh-pages]</span></code></p></li>
+<li><p>Wait for DNS to propagate and verify DNS check in <code class="docutils literal notranslate"><span class="pre">Settings&gt;Pages</span></code> passes before checking <code class="docutils literal notranslate"><span class="pre">Enforce</span> <span class="pre">HTTPS</span></code></p></li>
+<li><p>Introduce the website to your local groups!</p></li>
+</ol>
+<section id="interactive-maps">
+<h3>Interactive Maps<a class="headerlink" href="#interactive-maps" title="Permalink to this headline"></a></h3>
+<p>In order to display an interactive map along with meeting lists, a Google Maps
+API Key is required. Google provides documentation to
+<cite>obtain this API Key &lt;https://developers.google.com/maps/documentation/embed/get-api-key&gt;</cite>.</p>
+<p>The two settings that matter are:</p>
+<ul class="simple">
+<li><p>Application restrictions: <code class="docutils literal notranslate"><span class="pre">*&lt;your-domain&gt;/*</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">area63aa.org/*</span></code>)</p></li>
+<li><p>API restrictions: <code class="docutils literal notranslate"><span class="pre">Maps</span> <span class="pre">Embed</span> <span class="pre">API</span></code>, <code class="docutils literal notranslate"><span class="pre">Maps</span> <span class="pre">JavaScript</span> <span class="pre">API</span></code>, <code class="docutils literal notranslate"><span class="pre">Places</span> <span class="pre">API</span></code></p></li>
+</ul>
+</section>
+<section id="meeting-guide-app">
+<h3>Meeting Guide App<a class="headerlink" href="#meeting-guide-app" title="Permalink to this headline"></a></h3>
+<p>AA Mod produces a JSON file that can be used by the <a class="reference external" href="https://www.aa.org/meeting-guide-app">Meeting Guide</a> phone application.</p>
+<p>This file will be available at: <a class="reference external" href="https://yourdomain.tld/meeting-times.json">https://yourdomain.tld/meeting-times.json</a></p>
+<p>Connecting your meeting information to this application requires filling out a
+<code class="docutils literal notranslate"><span class="pre">connection</span> <span class="pre">form``_.</span> <span class="pre">Where</span> <span class="pre">it</span> <span class="pre">asks</span> <span class="pre">for</span> <span class="pre">``Site</span> <span class="pre">Sharing</span> <span class="pre">Key</span></code>, the web address of
+<code class="docutils literal notranslate"><span class="pre">meeting-times.json</span></code> should be provided.</p>
+</section>
+</section>
+<section id="security-updates">
+<h2>Security Updates<a class="headerlink" href="#security-updates" title="Permalink to this headline"></a></h2>
+<p>Most website vulnerabilities are around user authentication and authorization.
+They attempt to find ways to act like an admin or bypass an admin check or
+convince someone to share their password. Truly static websites do not suffer
+these problems because there is no dynamic component to be exploited. You cannot
+exploit that which is not present! (user authentication, file uploads, page
+edits, etc.)</p>
+<p>In other words … there is nothing for you to be concerned about. A security
+update for this project is currently inconceivable.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="about_aamod.html" class="btn btn-neutral float-left" title="About AA Mod" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="update_site.html" class="btn btn-neutral float-right" title="Update Website" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Recovery Source.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

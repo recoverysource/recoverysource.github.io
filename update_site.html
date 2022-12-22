@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Update Website &mdash; Recovery Source 0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Courtesy Mirrors" href="mirrors.html" />
+    <link rel="prev" title="AA(mod) Website" href="aamod_howto.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Recovery Source
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about_aamod.html">About AA Mod</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aamod_howto.html">AA(mod) Website</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Update Website</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#register-an-account">Register an Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pull-requests">Pull Requests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#responsibility">Responsibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-an-event">Create an Event</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-a-meeting">Update a Meeting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mirrors.html">Courtesy Mirrors</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Recovery Source</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Update Website</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/update_site.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="update-website">
+<span id="aamod-update"></span><h1>Update Website<a class="headerlink" href="#update-website" title="Permalink to this headline"></a></h1>
+<p>This document explains how a user can log in and create a new event or update a
+meeting time. This is intended for users who have never worked with Github and
+assumes a <a class="reference internal" href="aamod_howto.html#aamod-newsite"><span class="std std-ref">New Website</span></a> has already been created.</p>
+<section id="register-an-account">
+<h2>Register an Account<a class="headerlink" href="#register-an-account" title="Permalink to this headline"></a></h2>
+<p>In order to be granted access to make any changes, you must create an account.</p>
+<ol class="arabic">
+<li><p>Open <a class="reference external" href="https://github.com">https://github.com</a> and click <code class="docutils literal notranslate"><span class="pre">Sign</span> <span class="pre">up</span></code>:</p>
+<p><img alt="github_homepage" src="_images/1_github_homepage.png" /></p>
+</li>
+<li><p>Provide basic account information:</p>
+<p><img alt="github_create" src="_images/2_github_create.png" /></p>
+</li>
+<li><p>Check email and provide the temporary token:</p>
+<p><img alt="github_token" src="_images/3_github_token.png" /></p>
+</li>
+<li><p>Either provide demographic information or click <code class="docutils literal notranslate"><span class="pre">Skip</span> <span class="pre">personalization</span></code>:</p>
+<p><img alt="github_demographics" src="_images/4_github_demographics.png" /></p>
+</li>
+</ol>
+<p>At this point, your account has been created and is ready for use.</p>
+<p>You can now contact anyone in charge of the website you would like to help with
+and provide your account name with a request for access.</p>
+</section>
+<section id="pull-requests">
+<h2>Pull Requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline"></a></h2>
+<p>If you have not been provided access to a project and attempt to make changes on
+a website, Github will automatically create a <a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks">Fork</a>. This simply means your
+account now owns a copy of the project, which means you are free to make any
+changes to your copy.</p>
+<p>After making changes to this copy, you can create a <a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">Pull Request</a>, which just
+means you would like the main project to “absorb” your changes. Github provides
+a web interface for this which is documented on their website.</p>
+</section>
+<section id="responsibility">
+<h2>Responsibility<a class="headerlink" href="#responsibility" title="Permalink to this headline"></a></h2>
+<p>After a project (website) administrator has given you access to <code class="docutils literal notranslate"><span class="pre">Team</span></code>, you
+will likely be able to make changes directly to the website repository. Although
+access can be easily revoked and backups are automatic, most websites will
+automatically “build and deploy.” This means care should be taken in order to
+avoid phrases such as, “oh, I thought that was funny but I didn’t mean to
+actually save it like thit.”</p>
+<p>To accept this responsibility …</p>
+<ol class="arabic">
+<li><p>Open <a class="reference external" href="https://github.com">https://github.com</a>, select your user icon, and select <code class="docutils literal notranslate"><span class="pre">Your</span> <span class="pre">Organizations</span></code>:</p>
+<p><img alt="github_menu_org" src="_images/5_github_menu_org.png" /></p>
+</li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Join</span></code> next to the organization/team you have been invited to:</p>
+<p><img alt="github_org_list" src="_images/6_github_org_list.png" /></p>
+</li>
+<li><p>Read through the disclaimer and choose the appropriate option.</p></li>
+</ol>
+</section>
+<section id="create-an-event">
+<h2>Create an Event<a class="headerlink" href="#create-an-event" title="Permalink to this headline"></a></h2>
+<p>To create an event:</p>
+<ol class="arabic">
+<li><p>Navigate to your project:</p>
+<p><img alt="repo_front" src="_images/7_repo_front.png" /></p>
+</li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">content</span></code>, then <code class="docutils literal notranslate"><span class="pre">events</span></code>:</p>
+<p><img alt="repo_content" src="_images/8_repo_content.png" /></p>
+</li>
+<li><p>The easiest way to proceed is to copy/paste an existing or example document:</p>
+<p><img alt="repo_events" src="_images/9_repo_events.png" /></p>
+</li>
+<li><p>Select the chosen source document and click the <code class="docutils literal notranslate"><span class="pre">Display</span> <span class="pre">the</span> <span class="pre">source</span> <span class="pre">blob</span></code> button:</p>
+<p><img alt="repo_examplefile" src="_images/10_repo_examplefile.png" /></p>
+</li>
+<li><p>Highlight the document and “copy”. If this is challenging, the <code class="docutils literal notranslate"><span class="pre">Raw</span></code> button
+will provide a “plain text” version that is easier to use.</p>
+<p><img alt="repo_exampleraw" src="_images/11_repo_exampleraw.png" /></p>
+</li>
+<li><p>Back in the <code class="docutils literal notranslate"><span class="pre">events</span></code> directory, choose <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">file</span> <span class="pre">&gt;</span> <span class="pre">Create</span> <span class="pre">new</span> <span class="pre">file</span></code>:</p>
+<p><img alt="repo_newfile" src="_images/12_repo_newfile.png" /></p>
+</li>
+<li><p>Paste the starting file contents into the large box and provide a filename
+above.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This filename should NOT include spaces, keep it simple with numbers,
+lowercase letters, hyphens, and underscores. The filename <em>MUST</em> end with
+<code class="docutils literal notranslate"><span class="pre">.md</span></code>.</p>
+<p><img alt="repo_newfile" src="_images/12_repo_newfile.png" /></p>
+</div>
+<ol class="arabic" start="8">
+<li><p>Update the content as appropriate and provide a short explanation of the
+change that is being made:</p>
+<p><img alt="repo_editfile" src="_images/14_repo_editfile.png" /></p>
+</li>
+<li><p>After clicking the <code class="docutils literal notranslate"><span class="pre">commit</span></code> button, you can click <code class="docutils literal notranslate"><span class="pre">Actions</span></code> to observe
+the website update “build” process:</p>
+<p><img alt="actions_home" src="_images/15_actions_home.png" /></p>
+</li>
+<li><p>Once complete, green checkmarks will be displayed:</p></li>
+</ol>
+<blockquote>
+<div><p><img alt="actions_succeess" src="_images/16_actions_succeess.png" /></p>
+</div></blockquote>
+<ol class="arabic simple" start="11">
+<li><p>Your changes will now be available for the world to view:</p></li>
+</ol>
+<blockquote>
+<div><p><img alt="site_event" src="_images/17_site_event.png" /></p>
+</div></blockquote>
+</section>
+<section id="update-a-meeting">
+<h2>Update a Meeting<a class="headerlink" href="#update-a-meeting" title="Permalink to this headline"></a></h2>
+<p>The process to update meetings is very similar to the process required to
+<code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">an</span> <span class="pre">Event</span></code>. Meeting information is stored in the <code class="docutils literal notranslate"><span class="pre">data</span></code> folder, which
+can either have a single <code class="docutils literal notranslate"><span class="pre">meetings.yaml</span></code> file, or a directory named
+<code class="docutils literal notranslate"><span class="pre">meetings/</span></code> with any number of <code class="docutils literal notranslate"><span class="pre">____.yaml</span></code> files within, each one
+representing a meeting.</p>
+<p><strong>Geo Coords:</strong> Although the <code class="docutils literal notranslate"><span class="pre">longitude</span></code> and <code class="docutils literal notranslate"><span class="pre">latitude</span></code> fields are not
+required, adding them significantly increases the build time and accuracy of
+your website. If you locate the correct address in Google Maps, you can “right
+click” the “red pin” and then click the coordinates provided to “copy” them into
+your clipboard.</p>
+<p><strong>Address:</strong> When presented with a poorly-formatted or incomplete address
+without geo coordinates provided, a best-effort guess will be made as to what
+the correct address is. More accurate addresses will produce more accurate
+results.</p>
+<p><strong>Spaces:</strong> These <a class="reference external" href="https://www.redhat.com/en/topics/automation/what-is-yaml">yaml</a> files are a special format that functions very similar
+to a serverless database. Spaces (<strong>NOT TABS</strong>) and colons are very important.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="aamod_howto.html" class="btn btn-neutral float-left" title="AA(mod) Website" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="mirrors.html" class="btn btn-neutral float-right" title="Courtesy Mirrors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Recovery Source.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
